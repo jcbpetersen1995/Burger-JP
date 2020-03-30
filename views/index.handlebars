@@ -1,0 +1,61 @@
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-7"></div>
+  <div class="col-sm-5">
+    <h1 id="mainheader">Eat-Da-Burger</h1>
+  </div>
+</div>
+
+<div class="row">
+  <br>
+ 
+</div>
+
+<div class="row">
+  <div class="col-md-5"></div>
+  <div class="col-md-4 menu">
+    <h2>Burger Menu</h2>
+    <p>*All burgers are $5, no matter what you add to them!</p>
+    <ul>
+      {{#each burgers}}
+      {{#unless devoured}}
+      <li>
+        <h2><span class="burgerButton badge badge-warning" value="{{id}}">{{burger_name}}</span></h2>
+        <button class="devourButton btn btn-success" data-id="{{this.id}}">Devour It!</button>
+      </li>
+      <br>
+      {{/unless}}
+      {{/each}}
+    </ul>
+    <hr>
+  </div>
+  <div class="col-md-3 menu">
+    <h2>Devoured Burgers</h2>
+    <ul>
+      {{#each burgers}}
+      {{#if devoured}}
+      <li>
+        {{burger_name}}
+      </li>
+      {{/if}}
+      {{/each}}
+    </ul>
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-5"></div>
+  <div class="col-md-7 menu menubottom">
+    <form class="create-form" action="/create/burger" method="POST">
+
+      <div class="form-group">
+        <label for="ca">Create a Burger and Add to Our Menu!</label>
+        <input class="form-control" type="text" name="burgerInput">
+      </div>
+
+      <button class="btn btn-danger" type="submit">Add Burger</button>
+    </form>
+  </div>
+</div>
