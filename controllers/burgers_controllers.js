@@ -6,11 +6,11 @@ var burger = require("../models/burger");
 //             API ROUTES                 //
 ////////////////////////////////////////////
 
-router.get("/all", function(req,res) {
-    burger.all(function(result) {
-        res.json(result);
-    })
-})
+// router.get("/all", function(req,res) {
+//     burger.all(function(result) {
+//         res.json(result);
+//     })
+// })
 
 router.post("/create/burger", function(req,res) {
 
