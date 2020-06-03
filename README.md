@@ -12,6 +12,7 @@
   <li>HTML</li>
   <li>CSS</li>
   <li>Handlebars</li>
+  <li>MySQL</li>
   
  </ul>
 
