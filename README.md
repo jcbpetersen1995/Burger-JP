@@ -18,4 +18,4 @@
  </ul>
 
 <h2>Link to Deployed Application on Heroku</h2>
-<a href="https://eat-da-burger-jp.herokuapp.com/" target="_blank">Click Here!</a>
+<a href="https://eat-da-burger-jp.herokuapp.com/" target="_blank">Eat-Da-Burger</a>
