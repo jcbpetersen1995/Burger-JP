@@ -9,6 +9,9 @@
 
 <h2>Technology Used: </h2>
 <ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Handlebars</li>
   
  </ul>
 
